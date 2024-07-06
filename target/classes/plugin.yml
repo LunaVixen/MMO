@@ -1,0 +1,23 @@
+name: MMO
+version: '1.0-SNAPSHOT'
+main: pixelfox.mmo.MMO
+api-version: '1.21'
+commands:
+  level:
+    description: Changes MMO level
+    usage: /level <level>
+    permission: mmo.admin
+    permission-message: You do not have permission to use this commnad, this is made for testing perpuses only.
+
+  stats:
+    description: View your MMO stats
+    usage: /stats
+
+  cave:
+    description: Teleports the player to a nearby cave
+    usage: /cave
+
+permissions:
+  mmo.admin:
+    description: Allows the player to change MMO levels.
+    default: op
